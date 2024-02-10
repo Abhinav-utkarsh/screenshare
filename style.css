@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: #3c9725;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-start:hover {
+    background-color: #3477dc;
+}
+
+.button-start {
+    font-size: large;
+    width: 500px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-stop:hover {
+    background-color: #ff8b8b;
+}
+
+.button-stop {
+    font-size: large;
+    width: 500px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: #f43939;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #3477dc;
+}
+
+.vid {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-color: black;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: #abf48c;
+    text-shadow: 2px 2px 5px red;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-stop {
+    margin: 0;
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
